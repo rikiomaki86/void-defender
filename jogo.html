@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogar Void Defender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="desenvolvedores.html">Desenvolvedor</a>
+    <a href="jogo.html">Jogar</a>
+  </nav>
+
+  <main class="container">
+
+    <section class="hero pequeno">
+      <h1>Void Defender</h1>
+      <p class="subtitulo">
+        Entre na batalha e proteja a última linha de defesa.
+      </p>
+    </section>
+
+    <section class="area-jogo">
+
+      <button onclick="iniciarJogo()">Iniciar Jogo</button>
+
+      <canvas id="meuCanvas" width="600" height="400" style="display:none;"></canvas>
+
+    </section>
+
+    <section class="cards">
+
+      <div class="card">
+        <h2>Comandos</h2>
+        <p>
+          Use as setas esquerda e direita do teclado para mover a nave.
+          Clique com o mouse para atirar.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Objetivo</h2>
+        <p>
+          Destrua os aliens antes que eles encostem na nave ou passem pela parte
+          inferior da tela. O jogador vence ao alcançar 50 pontos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Powerup</h2>
+        <p>
+          Uma nave aliada pode aparecer durante a partida. Ao acertá-la três vezes,
+          o jogador ganha uma vida extra e ativa o tiro duplo temporariamente.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
